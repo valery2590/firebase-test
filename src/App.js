@@ -16,35 +16,42 @@ function App() {
   },[])
 
   const [dato, setDato] = useState('');
-  const [input, setInput] = useState('');
+  const [inputName, setInputName] = useState('');
+  const [inputAge, setInputAge] = useState('');
+  const [inputRace, setInputRace] = useState('');
 
-  const handleChange = e =>{
+  const handleInputChange = e =>{
     console.log(e.target.value)
-    setInput(e.target.value)
+    const {name, value} = e.target;
+    console.log(name, value)
+  }
+
+  const handleChangeName = e =>{
+    console.log(e.target.value)
+    setInputName(e.target.value)
+  }
+  const handleChangeAge = e =>{
+    console.log(e.target.value)
+    setInputAge(e.target.value)
+  }
+  const handleChangeRace = e =>{
+    console.log(e.target.value)
+    setInputRace(e.target.value)
   }
 
 return (
     <div>
-      <h1>Nueva APP</h1>
-      <div>
-        <input type="text" value={input} onChange={handleChange} />
-        <button type="submit">Add</button>
+      <h1>Register your buddy! 🐕🦮</h1>
+      <div className='input-container'>
+      <label>Name of the pet</label>
+        <input type="text"  onChange={handleInputChange} name="name"/>
+        <label>Age of the pet</label>
+        <input type="text" onChange={handleInputChange} name="age"/>
+        <label>Race of the pet</label>
+        <input type="text"  onChange={handleInputChange} name="race" />
+        <button type="submit">Add their race</button>
       </div>
-
-      <div>
-        <input type="text" value={input} onChange={handleChange} />
-        <button type="submit">Add</button>
-      </div>
-
-      <div>
-        <input type="text" value={input} onChange={handleChange} />
-        <button type="submit">Add</button>
-      </div>
-
-      <div>
-        <span>Name</span>
-        <span>{dato}</span>
-      </div>
+      
 
     </div>
   
