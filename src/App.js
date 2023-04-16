@@ -1,9 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './App.css';
 import { collection, getDocs } from "firebase/firestore";
 import { useEffect, useState } from 'react';
 import db from './firebase'
-import { async } from '@firebase/util';
 
 
 function App() {
