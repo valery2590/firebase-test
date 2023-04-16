@@ -18,13 +18,6 @@ const firebaseConfig = {
   appId: process.env.REACT_APP_FIREBASE_APPID,
   measurementId:process.env.REACT_APP_FIREBASE_MEASUREMENTID,
 
-// apiKey: "AIzaSyBfdjQX2wcJBnFlQF50RhbHmRYkOx45jlc",
-// authDomain: "fir-test-bc0ba.firebaseapp.com",
-// projectId: "fir-test-bc0ba",
-// storageBucket: "fir-test-bc0ba.appspot.com",
-// messagingSenderId: "591926261288",
-// appId: "1:591926261288:web:37a8a6d011f495d010671d",
-// measurementId: "G-S1VZ8GGESG"
 };
 
 // Initialize Firebase
